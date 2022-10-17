@@ -1,1 +1,3 @@
 # Mandelbrot
+Creating the plot of the mandelbrot set used the iterative function f(z) = z^2 + c, where initially z = 0 and c is a point on the complex plane. To find if a point lies in the set we iterate the function a set amount of times (N_max) and check if the distance from the origin, calculated by using the distance formula, exceeds our set threshold. 
+	In order to plot the figure, a resolution (n) must be picked. The plot is a 3 by 3 grid with corners at -2 - 1.5i and 1 + 1.5i. I used a mesh grid, a type of 2-D array to create a grid of points. I checked each coordinate to see if it was in the mandelbrot set using a helper function and colored the point using its boolean value.
